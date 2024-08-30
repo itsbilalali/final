@@ -60,7 +60,3 @@ jobs:
               body: "A new pull request has been automatically created and merged to main."
             })
 
-      - name: Delete the new branch 
-        run: |
-          git branch -D pr-to-main-${{ env.PR_SHA }}
-            
